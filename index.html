@@ -116,9 +116,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
@@ -134,6 +138,93 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Danny Chou">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式碼與生活">
+      <meta itemprop="description" content="Javascript, Vue, Node">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 程式碼與生活">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/" class="post-title-link" itemprop="url">hexo一鍵部署GitHub</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-09-04 11:01:58 / Modified: 11:27:59" itemprop="dateCreated datePublished" datetime="2023-09-04T11:01:58+08:00">2023-09-04</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>參考官方資料與其他部落格，整理後，測試以下步驟可以成功部署至 GitHub。</p>
+<p><strong>標題</strong></p>
+<h3 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h3><ol>
+<li>本地端安裝 <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/setup">hexo</a></li>
+<li>註冊 GitHub 帳號</li>
+<li>GitHub 建立專案倉庫(repository)</li>
+<li>將本地端 hexo 專案與遠端倉庫建立連結</li>
+<li>安裝一鍵部署 GitHub 套件</li>
+<li><code>_config.yml</code> 配置部署所需的設定內容</li>
+</ol>
+<h3 id="安裝一鍵部署-GitHub-套件"><a href="#安裝一鍵部署-GitHub-套件" class="headerlink" title="安裝一鍵部署 GitHub 套件"></a>安裝一鍵部署 GitHub 套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml-配置部署內容"><a href="#config-yml-配置部署內容" class="headerlink" title="_config.yml 配置部署內容"></a>_config.yml 配置部署內容</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://github.com/&lt;:username&gt;/&lt;:username&gt;.github.io.git</span></span><br><span class="line">    <span class="comment">## https://github.com/dannychou7911/dannychou7911.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">gh-pages</span> <span class="comment">##可依據需求調整分支名稱 ex. main, master... and so on.</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/github-pages">官方資料</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github#%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub">如何使用 Hexo + GitHub Pages 架設個人網誌</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

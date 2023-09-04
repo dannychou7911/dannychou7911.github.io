@@ -19,28 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="參考官方資料與其他部落格，整理後，測試以下步驟可以成功部署至 GitHub。 標題 步驟 本地端安裝 hexo 註冊 GitHub 帳號 GitHub 建立專案倉庫(repository) 將本地端 hexo 專案與遠端倉庫建立連結 安裝一鍵部署 GitHub 套件 _config.yml 配置部署所需的設定內容  安裝一鍵部署 GitHub 套件1$ npm install hexo-deplo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/09/03/hello-world/index.html">
+<meta property="og:title" content="hexo一鍵部署GitHub">
+<meta property="og:url" content="http://example.com/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/index.html">
 <meta property="og:site_name" content="程式碼與生活">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="參考官方資料與其他部落格，整理後，測試以下步驟可以成功部署至 GitHub。 標題 步驟 本地端安裝 hexo 註冊 GitHub 帳號 GitHub 建立專案倉庫(repository) 將本地端 hexo 專案與遠端倉庫建立連結 安裝一鍵部署 GitHub 套件 _config.yml 配置部署所需的設定內容  安裝一鍵部署 GitHub 套件1$ npm install hexo-deplo">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-03T15:39:48.925Z">
-<meta property="article:modified_time" content="2023-09-03T15:39:48.925Z">
+<meta property="article:published_time" content="2023-09-04T03:01:58.000Z">
+<meta property="article:modified_time" content="2023-09-04T03:27:59.915Z">
 <meta property="article:author" content="Danny Chou">
-<meta property="article:tag" content="程式碼,生活">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2023/09/03/hello-world/">
+<link rel="canonical" href="http://example.com/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/09/03/hello-world/","path":"2023/09/03/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/","path":"2023/09/04/hexo一鍵部署GitHub/","title":"hexo一鍵部署GitHub"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | 程式碼與生活</title>
+<title>hexo一鍵部署GitHub | 程式碼與生活</title>
   
 
 
@@ -106,7 +106,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2-GitHub-%E5%A5%97%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">安裝一鍵部署 GitHub 套件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml-%E9%85%8D%E7%BD%AE%E9%83%A8%E7%BD%B2%E5%85%A7%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">_config.yml 配置部署內容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%BA%90"><span class="nav-number">4.</span> <span class="nav-text">參考資源</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -151,7 +151,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -164,12 +164,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | 程式碼與生活">
+      <meta itemprop="name" content="hexo一鍵部署GitHub | 程式碼與生活">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          hexo一鍵部署GitHub
         </h1>
 
         <div class="post-meta-container">
@@ -179,8 +179,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-09-03 23:39:48" itemprop="dateCreated datePublished" datetime="2023-09-03T23:39:48+08:00">2023-09-03</time>
+      <time title="Created: 2023-09-04 11:01:58 / Modified: 11:27:59" itemprop="dateCreated datePublished" datetime="2023-09-04T11:01:58+08:00">2023-09-04</time>
     </span>
 
   
@@ -192,19 +193,24 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><p>參考官方資料與其他部落格，整理後，測試以下步驟可以成功部署至 GitHub。</p>
+<p><strong>標題</strong></p>
+<h3 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h3><ol>
+<li>本地端安裝 <a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/setup">hexo</a></li>
+<li>註冊 GitHub 帳號</li>
+<li>GitHub 建立專案倉庫(repository)</li>
+<li>將本地端 hexo 專案與遠端倉庫建立連結</li>
+<li>安裝一鍵部署 GitHub 套件</li>
+<li><code>_config.yml</code> 配置部署所需的設定內容</li>
+</ol>
+<h3 id="安裝一鍵部署-GitHub-套件"><a href="#安裝一鍵部署-GitHub-套件" class="headerlink" title="安裝一鍵部署 GitHub 套件"></a>安裝一鍵部署 GitHub 套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="config-yml-配置部署內容"><a href="#config-yml-配置部署內容" class="headerlink" title="_config.yml 配置部署內容"></a>_config.yml 配置部署內容</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://github.com/&lt;:username&gt;/&lt;:username&gt;.github.io.git</span></span><br><span class="line">    <span class="comment">## https://github.com/dannychou7911/dannychou7911.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">gh-pages</span> <span class="comment">##可依據需求調整分支名稱 ex. main, master... and so on.</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/github-pages">官方資料</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github#%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub">如何使用 Hexo + GitHub Pages 架設個人網誌</a></li>
+</ol>
 
     </div>
 
@@ -213,16 +219,19 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2023/09/03/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/09/04/hexo%E4%B8%80%E9%8D%B5%E9%83%A8%E7%BD%B2GitHub/" rel="next" title="hexo一鍵部署GitHub">
-                  hexo一鍵部署GitHub <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
